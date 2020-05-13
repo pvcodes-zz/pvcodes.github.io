@@ -41,6 +41,28 @@ p {
     color: #fff;
 }
 
+#return {
+    position: absolute;
+    left: 36%;
+    top: 46%;
+
+    a {
+        text-decoration: none;
+
+        color: white;
+        font-size: 3rem;
+        transition: all .6s linear;
+
+        &:hover {
+            background-color: #B71C1C;
+            border-radius: 5px;
+
+        }
+    }
+}
+
+
+
 @for $i from 1 to 10 {
     p:nth-child(#{$i}) {
         text-shadow: makelongshadow(adjust-hue($color, $i * 30));
