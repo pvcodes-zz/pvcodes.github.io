@@ -27,6 +27,15 @@ $(document).ready(function () {
 $("#contactForm").submit(function (e) {
   e.preventDefault();
 });
+
+$("button").keydown(function () {
+  $(this).css({
+    transform: "scale(.8)",
+    background: "#eeeeee",
+    color: "green",
+  });
+  $(this).text("submitted");
+});
 // ==========================
 // Defining Functions
 // ==========================
