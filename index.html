@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>pvcodes.dev</title>
+  <link rel="shortcut icon" href="./assets/img/logo.png" style="border-radius: 50%;" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
+  <!-- Type Writter Script -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="./assets/js/lib/typescript.js"></script>
 
-
+  <!-- fontAwesome Script -->
+  <script src="https://kit.fontawesome.com/f3ba30e5d2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,26 +24,138 @@
       <h2>pvcodes</h2>
     </div>
     <div id="menubar">
-      <span>Menu</span><img src="./assets/img/svg/menuCircle.svg" alt="">
+      <span>Menu</span><i class="far fa-circle"></i>
 
     </div>
     <ul id="navbar">
-      <li id="home"><a href="">home</a> </li>
-      <li id="about"><a href="">about</a> </li>
-      <li id="portfolio"><a href="">portfolio</a> </li>
-      <li id="services"><a href="">services</a> </li>
-      <li id="contact"><a href="">contact</a> </li>
+      <li id="home"><a class=" active navItems " href="#homeSec">home</a> </li>
+      <li id="about"><a class="navItems" href="#aboutSec">about</a> </li>
+      <li id="services"><a class="navItems" href="#servicesSec">services</a> </li>
+      <li id="blog"><a class="navItems" href="#blogSec">blog</a> </li>
+      <li id="portfolio"><a class="navItems" href="#portfolioSec">portfolio</a> </li>
+      <li id="contact"><a class="navItems" href="#contactSec">contact</a> </li>
     </ul>
   </header>
   <section class="section" id="homeSec">
-    <img src="./assets/img/me.jpeg" alt="Pranjal Verma" id="myImg">
+    <img src="./assets/img/me.jpg" alt="Pranjal Verma" id="myImg">
     <div id="centerText"></div>
   </section>
-  <section class="section" id="aboutSec"></section>
-  <section class="section" id="portfolioSec"></section>
-  <section class="section" id="servicesSec"></section>
-  <section class="section" id="contactSec"></section>
+  <section class="section" id="aboutSec">
+    <h2>A short info about me.</h2>
+
+    <div id="aboutPara">
+      <p>I'm a second year student completing my bachelors in computer applications from Integral Unviversity, Lucknow,
+        India. I like to gain new experiences, get in touch with peoples with new ideas to find diggerent point of views
+        and watch and interpret the world. I look forward to share and explore my values. Moreover, this is my very
+        portfolio which comprises of the projects done in year 2019-2020.</p>
+
+
+      <p> I create websites that supercharge your business with full verve; I love to deliver websites with
+        unchallengeable performance. With top-notch code, you'll be ready to kickstart your business. I love to create
+        nice and beautiful websites. I stand on the sweet spot where frontend and backend development blend.</p>
+    </div>
+    <div id="myEdu">
+      <h3>Education</h3>
+
+      <p class="clg">Jagran Public School </p>
+      <p class="stnd">Senior Secondary Education (2015-2019)</p>
+      <p class="clg">Integral University</p>
+      <p class="stnd">Bachelors Of Computer Applications (2019-2022)</p>
+    </div>
+
+  </section>
+  <section class="section" id="servicesSec">
+    <h2>What I Offer!</h2>
+    <div id="cardContainer">
+      <div class="servicesCards" id="webpageServ"><i class="fas fa-tv"></i>
+        <div class="servicesInfo">
+          <h3>Webpages</h3>
+          <p>I design stunning and elegant webpages</p>
+        </div>
+      </div>
+      <div class=" servicesCards" id="websiteServ"><i class="fas fa-shopping-bag"></i>
+        <div class="servicesInfo">
+          <h3>Websites</h3>
+          <p>I design fully responsive stunning and elegant websites</p>
+        </div>
+      </div>
+      <div class="servicesCards" id="logoServ"><i class="fas fa-adjust"></i>
+        <div class="servicesInfo">
+          <h3>Logo Design</h3>
+          <p>I my free time, I also design Logo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="blogSec">
+    <h2>Blog</h2>
+    <div class="commingsoon" id="blogSoon"></div>
+  </section>
+
+  <section class="section" id="portfolioSec">
+    <h2>Projects</h2>
+    <div class="commingsoon" id="projectSoon"></div>
+  </section>
+
+  <section class="section" id="contactSec">
+    <form id="contactForm" method="post" data-netlify=true"">
+      <h2>Contact Me</h2>
+      <div class="form-control">
+        <label for="name">Your Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-control">
+        <label for="name">Enter your Email</label>
+        <input type="email" id="email" required>
+
+      </div>
+      <div class="form-control">
+        <label for="msg">What can I do for you?</label>
+        <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+      </div>
+      <div class="form-control"><button>Submit</button></div>
+    </form>
+
+    <div id="socialHandles">
+      <h2>Connect with me</h2>
+      <div id="socialIcons">
+        <div> <a href="https://www.instagram.com/pvcodes/"><i class="fab fa-instagram"></i></a>
+          <p>@pvcodes</p>
+        </div>
+        <div> <a href="https://www.twitter.com/pvcodes/"><i class="fab fa-twitter"></i></a>
+          <p>@pvcodes</p>
+        </div>
+        <div> <a href="https://dev.to/pvcodes"><i class="fab fa-dev"></i></a>
+          <p>@pvcodes</p>
+        </div>
+        <div> <a href="https://www.reddit.com/user/pvcodes/"><i class="fab fa-reddit"></i></a>
+          <p>@pvcodes</p>
+        </div>
+        <div> <a href="https://www.behance.net/pvcodes"><i class="fab fa-behance"></i></a>
+          <p>@pvcodes</p>
+        </div>
+        <div> <a href="mailto:pvcodes@gmail.com"><i class="far fa-envelope"></i></a>
+          <p>pvcodes@gmail.com</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>All right Reserved &copy; </p>
+    <p>Made with <i class="fas fa-heart"></i> by Pranjal Verma</p>
+  </footer>
+
   <script src="./assets/js/index.js"></script>
+
+  <!-- 
+    This site is made by Pranjal Verma email(pranjalverma0606@gmail.com)
+    from date 08-05-2020 to 13-05-2020 
+    It is my first portfolio website.
+  -->
+
 </body>
 
 </html>
