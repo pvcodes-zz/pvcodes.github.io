@@ -28,7 +28,7 @@ $("#contactForm").submit(function (e) {
   e.preventDefault();
 });
 
-$("button").keydown(function () {
+$("button").click(function () {
   $(this).css({
     transform: "scale(.8)",
     background: "#eeeeee",
