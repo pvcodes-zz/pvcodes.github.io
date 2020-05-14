@@ -397,7 +397,7 @@ footer p i {
     position: initial;
   }
   header #navbar li {
-    padding: 1rem;
+    padding: .5rem;
   }
   header #navbar li:hover {
     -webkit-transform: scale(1.1);
@@ -406,6 +406,11 @@ footer p i {
   header #navbar li a {
     color: white;
     text-transform: uppercase;
+    padding: .5rem;
+    border-radius: 1rem;
+  }
+  #aboutPara p {
+    padding-right: 2rem;
   }
   #contactSec {
     display: -webkit-box;
@@ -445,6 +450,9 @@ footer p i {
     -webkit-transform: translateX(2px);
             transform: translateX(2px);
   }
+  #contactSec #socialHandles #socialIcons div a {
+    z-index: 100;
+  }
   #contactSec #socialHandles #socialIcons div p {
     display: block;
     -webkit-transform: translateX(-216px);
@@ -459,7 +467,6 @@ footer p i {
     transition: -webkit-transform .6s linear;
     transition: transform .6s linear;
     transition: transform .6s linear, -webkit-transform .6s linear;
-    z-index: 100;
   }
   #contactSec #socialHandles #socialIcons div i:hover {
     -webkit-transform: rotate(360deg);
