@@ -16,13 +16,14 @@ a {
 }
 
 .active {
-  background: #C62828;
+  background: #c62828;
+  color: yellow;
 }
 
 body {
   background: #232323;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 header {
@@ -36,11 +37,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background: inherit;
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
   z-index: 999;
-  -webkit-transition: background .6s linear;
-  transition: background .6s linear;
+  -webkit-transition: background 0.6s linear;
+  transition: background 0.6s linear;
 }
 
 #logo {
@@ -58,10 +59,10 @@ header {
 }
 
 #logo h2 {
-  margin-left: .5rem;
-  color: #C62828;
+  margin-left: 0.5rem;
+  color: #c62828;
   font-weight: 600;
-  font-family: 'Megrim', cursive;
+  font-family: "Megrim", cursive;
 }
 
 #menubar {
@@ -70,22 +71,22 @@ header {
 }
 
 #menubar span {
-  font-size: .5rem;
+  font-size: 0.5rem;
   position: absolute;
   right: 9px;
   bottom: 14.5px;
   z-index: 998;
   text-transform: uppercase;
   font-weight: bold;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 #menubar .far {
   font-size: 2.5rem;
   border-radius: 50%;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   z-index: 999;
 }
 
@@ -100,12 +101,12 @@ header {
 }
 
 #navbar li {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   text-transform: uppercase;
-  -webkit-transition: -webkit-text-decoration .6s linear;
-  transition: -webkit-text-decoration .6s linear;
-  transition: text-decoration .6s linear;
-  transition: text-decoration .6s linear, -webkit-text-decoration .6s linear;
+  -webkit-transition: -webkit-text-decoration 0.6s linear;
+  transition: -webkit-text-decoration 0.6s linear;
+  transition: text-decoration 0.6s linear;
+  transition: text-decoration 0.6s linear, -webkit-text-decoration 0.6s linear;
 }
 
 #navbar li:hover {
@@ -115,21 +116,21 @@ header {
 
 #navbar li .navItems {
   color: white;
-  -webkit-transition: background .3s linear;
-  transition: background .3s linear;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
 }
 
 .section {
   padding-left: 5px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .section h2 {
   font-weight: 700;
-  color: #C62828;
+  color: #c62828;
   margin: 1rem 0 2rem 0;
   font-size: 2rem;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 .section .commingsoon {
@@ -180,13 +181,13 @@ header {
   background-position: bottom;
   background-attachment: fixed;
   z-index: -1;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #aboutSec #myEdu h3 {
-  color: #C62828;
+  color: #c62828;
   font-size: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #aboutSec #myEdu p {
@@ -201,7 +202,7 @@ header {
   padding-bottom: 1rem;
   font-weight: 300;
   font-style: italic;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 #aboutSec p {
@@ -210,7 +211,7 @@ header {
 }
 
 #aboutSec #aboutPara p:nth-child(2) {
-  padding-bottom: .9rem;
+  padding-bottom: 0.9rem;
 }
 
 #servicesSec .servicesCards {
@@ -218,7 +219,7 @@ header {
   position: relative;
   text-align: center;
   padding: 50px 30px;
-  background: #EEEEEE;
+  background: #eeeeee;
   color: #232323;
   border-radius: 5px;
   -webkit-transform: scale(0.9);
@@ -263,8 +264,8 @@ header {
   width: 25rem;
   margin: 0 auto;
   background: #212121;
-  color: #EEEEEE;
-  padding: .5rem;
+  color: #eeeeee;
+  padding: 0.5rem;
 }
 
 #contactSec #contactForm .form-control {
@@ -279,22 +280,22 @@ header {
 }
 
 #contactSec #contactForm .form-control label {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   font-weight: bold;
 }
 
 #contactSec #contactForm .form-control input,
 #contactSec #contactForm .form-control #msg {
   border: none;
-  border: 1px solid #9E9E9E;
+  border: 1px solid #9e9e9e;
   background: none;
-  padding: .5rem;
+  padding: 0.5rem;
   outline: none;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 #contactSec #contactForm .form-control button {
-  background: #689F38;
+  background: #689f38;
   border: none;
   border-radius: 5px;
   width: 15rem;
@@ -302,10 +303,10 @@ header {
   margin: 0 auto;
   font-weight: bold;
   font-size: 2rem;
-  -webkit-transition: -webkit-transform .3s linear;
-  transition: -webkit-transform .3s linear;
-  transition: transform .3s linear;
-  transition: transform .3s linear, -webkit-transform .3s linear;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 #contactSec #contactForm .form-control button:hover {
@@ -315,11 +316,11 @@ header {
 #socialHandles i {
   padding: 1rem;
   font-size: 2rem;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 #socialHandles i:hover {
-  color: #C62828;
+  color: #c62828;
 }
 
 #socialHandles #socialIcons {
@@ -352,12 +353,12 @@ footer::before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .45;
+  opacity: 0.45;
   z-index: -1;
 }
 
 footer p i {
-  color: #C62828;
+  color: #c62828;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -397,7 +398,7 @@ footer p i {
     position: initial;
   }
   header #navbar li {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   header #navbar li:hover {
     -webkit-transform: scale(1.1);
@@ -406,7 +407,7 @@ footer p i {
   header #navbar li a {
     color: white;
     text-transform: uppercase;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
   }
   #aboutPara p {
@@ -457,16 +458,16 @@ footer p i {
     display: block;
     -webkit-transform: translateX(-216px);
             transform: translateX(-216px);
-    -webkit-transition: -webkit-transform .6s linear;
-    transition: -webkit-transform .6s linear;
-    transition: transform .6s linear;
-    transition: transform .6s linear, -webkit-transform .6s linear;
+    -webkit-transition: -webkit-transform 0.6s linear;
+    transition: -webkit-transform 0.6s linear;
+    transition: transform 0.6s linear;
+    transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   }
   #contactSec #socialHandles #socialIcons div i {
-    -webkit-transition: -webkit-transform .6s linear;
-    transition: -webkit-transform .6s linear;
-    transition: transform .6s linear;
-    transition: transform .6s linear, -webkit-transform .6s linear;
+    -webkit-transition: -webkit-transform 0.6s linear;
+    transition: -webkit-transform 0.6s linear;
+    transition: transform 0.6s linear;
+    transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   }
   #contactSec #socialHandles #socialIcons div i:hover {
     -webkit-transform: rotate(360deg);
@@ -491,5 +492,236 @@ footer p i {
   html {
     width: 133%;
   }
+}
+
+/* Preloader */
+.ctn-preloader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.ctn-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+}
+
+/* Spinner Loading */
+.ctn-preloader .animation-preloader .spinner {
+  -webkit-animation: spinner 1s infinite linear;
+          animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000000;
+  /* No se identa por orden alfabetico para que no lo sobre-escriba */
+  height: 9em;
+  margin: 0 auto 3.5em auto;
+  width: 9em;
+}
+
+/* Text Loading */
+.ctn-preloader .animation-preloader .txt-loading {
+  font: bold 5em "Montserrat", sans-serif;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  -webkit-animation: letters-loading 4s infinite;
+          animation: letters-loading 4s infinite;
+  color: #000000;
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(2):before {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(3):before {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(4):before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(5):before {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(6):before {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(7):before {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.ctn-preloader .loader-section {
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: calc(50% + 1px);
+}
+
+.ctn-preloader .loader-section.section-left {
+  left: 0;
+}
+
+.ctn-preloader .loader-section.section-right {
+  right: 0;
+}
+
+/* Fade effect on loading animation */
+.loaded .animation-preloader {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+/* Curtain effect */
+.loaded .loader-section.section-left {
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
+  -webkit-transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+.loaded .loader-section.section-right {
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
+  -webkit-transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+/* Animation of the preloader */
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+@keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+/* Animation of the letters loading from the preloader */
+@-webkit-keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+/* Backward laptop size (laptop, tablet, cell phone) */
+@media screen and (max-width: 767px) {
+  /* Preloader */
+  /* Spinner Loading */
+  .ctn-preloader .animation-preloader .spinner {
+    height: 8em;
+    width: 8em;
+  }
+  /* Texto Loading */
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 3.5em "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Prelaoder */
+  /* Spinner Loading */
+  .ctn-preloader .animation-preloader .spinner {
+    height: 7em;
+    width: 7em;
+  }
+  /* Texto Loading */
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 2em "Montserrat", sans-serif;
+  }
+}
+
+#qwerty {
+  background-color: #232323;
+  color: wheat;
+  font-size: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,17 @@
 // Defining Variables
 // ==========================
 var toggle = true;
+var mql = window.matchMedia("(max-width: 768px)");
+var navItems = $(".navItems");
+var header = $("header").height();
+var section = $("section");
+
+// ==========================
+// Preloader Setting
+// ==========================
+$(window).on("load", function () {
+  $("#preloader").fadeOut("slow");
+});
 
 // ==========================
 // Responsiveness to #menubar
@@ -23,6 +34,17 @@ $(document).ready(function () {
   //bg color when click on navItems
   navItemsAnimation();
 });
+
+// ==========================
+// Scroll and particular navtem styles
+// ==========================
+scrollJugaad();
+
+// ==========================
+// Removing scroll animation on 768px
+// ==========================
+mqlFunc(mql); // Call listener function at run time
+mql.addListener(mqlFunc); // Attach listener function on state changes
 
 // ==========================
 // Defining Functions
@@ -63,7 +85,7 @@ function centerTextTransition() {
     strings: [
       "Hello, I'm Pranjal Verma.",
       "A Frontend Developer.",
-      "From Western India",
+      "From India",
     ],
     autoStart: true,
     loop: true,
@@ -89,7 +111,7 @@ function headerSticky() {
     if (y > x.top) {
       $("header").fadeIn().css({ position: "sticky", top: "0" });
     } else {
-      $("header").css({ position: "static" });
+      $("header").css({ position: "sticky" });
     }
   });
 }
@@ -109,5 +131,32 @@ function navItemsAnimation() {
   $(document).on("click", ".navItems", function () {
     $(".navItems").removeClass("active");
     $(this).addClass("active");
+  });
+}
+
+function mqlFunc(mql) {
+  if (mql.matches) {
+    $(".animate").removeClass("animate__animated");
+  } else {
+  }
+}
+
+function scrollJugaad() {
+  $(document).on("scroll", function () {
+    var currentScrollPos = $(document).scrollTop();
+
+    section.each(function () {
+      var self = $(this);
+      if (
+        self.offset().top < currentScrollPos + header &&
+        currentScrollPos + header < self.offset().top + self.outerHeight()
+      ) {
+        var targetClass = self.attr("id");
+        targetClass = "#" + targetClass.substring(0, targetClass.length - 3);
+        targetClass = targetClass + " a";
+        navItems.removeClass("active");
+        $(targetClass).addClass("active");
+      }
+    });
   });
 }

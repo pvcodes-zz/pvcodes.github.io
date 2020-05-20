@@ -1,5 +1,5 @@
 // Importing fonts from google fonts
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Megrim&family=Overpass&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Megrim&family=Overpass&display=swap");
 
 // CSS RESET
 *,
@@ -7,12 +7,10 @@
 *::after {
   margin: 0;
   padding: 0;
-  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 // Defining variables
-$redColor: #C62828;
-
+$redColor: #c62828;
 
 // Global Style
 li {
@@ -27,14 +25,14 @@ a {
 // Class for JS
 .active {
   background: $redColor;
+  color: yellow;
+
 }
 
 body {
   background: #232323;
   color: white;
-  font-family: 'Overpass', sans-serif;
-
-
+  font-family: "Overpass", sans-serif;
 }
 
 // Styling header
@@ -43,10 +41,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background: inherit;
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
   z-index: 999;
-  transition: background .6s linear;
+  transition: background 0.6s linear;
 }
 
 #logo {
@@ -59,13 +57,11 @@ header {
   }
 
   h2 {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     color: $redColor;
     font-weight: 600;
-    font-family: 'Megrim', cursive;
-
+    font-family: "Megrim", cursive;
   }
-
 }
 
 #menubar {
@@ -73,24 +69,22 @@ header {
   cursor: pointer;
 
   span {
-    font-size: .5rem;
+    font-size: 0.5rem;
     position: absolute;
     right: 9px;
     bottom: 14.5px;
     z-index: 998;
     text-transform: uppercase;
     font-weight: bold;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
   }
 
   .far {
     font-size: 2.5rem;
     border-radius: 50%;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     z-index: 999;
   }
-
-
 }
 
 #navbar {
@@ -103,9 +97,9 @@ header {
   text-align: center;
 
   li {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     text-transform: uppercase;
-    transition: text-decoration .6s linear;
+    transition: text-decoration 0.6s linear;
 
     &:hover {
       transform: scale(1.1);
@@ -113,7 +107,7 @@ header {
 
     .navItems {
       color: white;
-      transition: background .3s linear;
+      transition: background 0.3s linear;
     }
   }
 }
@@ -121,14 +115,14 @@ header {
 //General Styling of section
 .section {
   padding-left: 5px;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 
   h2 {
     font-weight: 700;
     color: $redColor;
     margin: 1rem 0 2rem 0;
     font-size: 2rem;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
   }
 
   .commingsoon {
@@ -171,7 +165,7 @@ header {
     background-position: bottom;
     background-attachment: fixed;
     z-index: -1;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -181,7 +175,7 @@ header {
     h3 {
       color: $redColor;
       font-size: 2rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
@@ -192,12 +186,11 @@ header {
       font-weight: bold;
     }
 
-
     .stnd {
       padding-bottom: 1rem;
       font-weight: 300;
       font-style: italic;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -207,24 +200,21 @@ header {
   }
 
   #aboutPara p:nth-child(2) {
-    padding-bottom: .9rem;
+    padding-bottom: 0.9rem;
   }
 }
 
-
 // Styling section services
 #servicesSec {
-
-
   .servicesCards {
     margin: 2rem;
     position: relative;
     text-align: center;
     padding: 50px 30px;
-    background: #EEEEEE;
+    background: #eeeeee;
     color: #232323;
     border-radius: 5px;
-    transform: scale(.9);
+    transform: scale(0.9);
 
     &:hover {
       .servicesInfo {
@@ -265,8 +255,8 @@ header {
     width: 25rem;
     margin: 0 auto;
     background: #212121;
-    color: #EEEEEE;
-    padding: .5rem;
+    color: #eeeeee;
+    padding: 0.5rem;
 
     .form-control {
       display: flex;
@@ -274,23 +264,22 @@ header {
       margin-bottom: 1.5rem;
 
       label {
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
         font-weight: bold;
       }
 
       input,
       #msg {
         border: none;
-        border: 1px solid #9E9E9E;
+        border: 1px solid #9e9e9e;
         background: none;
-        padding: .5rem;
+        padding: 0.5rem;
         outline: none;
-        color: #EEEEEE;
+        color: #eeeeee;
       }
 
-
       button {
-        background: #689F38;
+        background: #689f38;
         border: none;
         border-radius: 5px;
         width: 15rem;
@@ -298,7 +287,7 @@ header {
         margin: 0 auto;
         font-weight: bold;
         font-size: 2rem;
-        transition: transform .3s linear;
+        transition: transform 0.3s linear;
 
         &:hover {
           cursor: pointer;
@@ -312,7 +301,7 @@ header {
   i {
     padding: 1rem;
     font-size: 2rem;
-    color: #EEEEEE;
+    color: #eeeeee;
 
     &:hover {
       color: $redColor;
@@ -349,7 +338,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .45;
+    opacity: 0.45;
     z-index: -1;
   }
 
@@ -360,12 +349,9 @@ footer {
   }
 }
 
-
 // Responsiveness
 
-
-
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
   header {
     height: 4rem;
     display: flex;
@@ -393,7 +379,8 @@ footer {
       position: initial;
 
       li {
-        padding: .5rem;
+        padding: 0.5rem;
+
         &:hover {
           transform: scale(1.1);
         }
@@ -401,7 +388,7 @@ footer {
         a {
           color: white;
           text-transform: uppercase;
-          padding: .5rem;
+          padding: 0.5rem;
           border-radius: 1rem;
         }
       }
@@ -439,18 +426,17 @@ footer {
           }
 
           a {
-
             z-index: 100;
           }
 
           p {
             display: block;
             transform: translateX(-216px);
-            transition: transform .6s linear;
+            transition: transform 0.6s linear;
           }
 
           i {
-            transition: transform .6s linear;
+            transition: transform 0.6s linear;
 
             &:hover {
               transform: rotate(360deg);
@@ -460,13 +446,10 @@ footer {
       }
     }
   }
-
 }
 
-
-@media screen and (min-width:768px) {
-
-  //services Sec 
+@media screen and (min-width: 768px) {
+  //services Sec
   #cardContainer {
     display: flex;
     justify-content: space-around;
@@ -477,8 +460,200 @@ footer {
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width: 375px) {
   html {
     width: 133%;
   }
+}
+
+// ===============================================================
+// ===============================================================
+// ===============================================================
+// Preloader Styling
+// ===============================================================
+// ===============================================================
+// ===============================================================
+/* Preloader */
+.ctn-preloader {
+  align-items: center;
+  cursor: none;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.ctn-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+}
+
+/* Spinner Loading */
+.ctn-preloader .animation-preloader .spinner {
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000000; /* No se identa por orden alfabetico para que no lo sobre-escriba */
+  height: 9em;
+  margin: 0 auto 3.5em auto;
+  width: 9em;
+}
+
+/* Text Loading */
+.ctn-preloader .animation-preloader .txt-loading {
+  font: bold 5em "Montserrat", sans-serif;
+  text-align: center;
+  user-select: none;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  animation: letters-loading 4s infinite;
+  color: #000000;
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateY(-90deg);
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(6):before {
+  animation-delay: 1s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+
+.ctn-preloader .loader-section {
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: calc(50% + 1px);
+}
+
+.ctn-preloader .loader-section.section-left {
+  left: 0;
+}
+
+.ctn-preloader .loader-section.section-right {
+  right: 0;
+}
+
+/* Fade effect on loading animation */
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+/* Curtain effect */
+.loaded .loader-section.section-left {
+  transform: translateX(-101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+.loaded .loader-section.section-right {
+  transform: translateX(101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+/* Animation of the preloader */
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Animation of the letters loading from the preloader */
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+  }
+
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+/* Backward laptop size (laptop, tablet, cell phone) */
+@media screen and (max-width: 767px) {
+  /* Preloader */
+  /* Spinner Loading */
+  .ctn-preloader .animation-preloader .spinner {
+    height: 8em;
+    width: 8em;
+  }
+
+  /* Texto Loading */
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 3.5em "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Prelaoder */
+  /* Spinner Loading */
+  .ctn-preloader .animation-preloader .spinner {
+    height: 7em;
+    width: 7em;
+  }
+
+  /* Texto Loading */
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 2em "Montserrat", sans-serif;
+  }
+}
+
+#qwerty {
+  background-color: #232323;
+  color: wheat;
+  font-size: 6rem;
 }

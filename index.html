@@ -26,6 +26,9 @@
   </script>
   <!-- Animate CSS Style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <!-- ScrollSpy Script -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/scrollspy@1.6.0/index.min.js"></script> -->
+
 </head>
 
 <body>
@@ -49,8 +52,9 @@
     </ul>
   </header>
   <section class="section" id="homeSec">
-    <img src="./assets/img/me.jpg" alt="Pranjal Verma" id="myImg" class="animate__animated animate__bounceInDown">
-    <div class=" animate__animated animate__bounceInUp" id="centerText"></div>
+    <img src="./assets/img/me.jpg" alt="Pranjal Verma" id="myImg"
+      class="animate animate__animated animate__bounceInDown">
+    <div class="animate animate__animated animate__bounceInUp" id="centerText"></div>
   </section>
   <section class="section" id="aboutSec">
     <h2>A short info about me.</h2>
@@ -80,23 +84,25 @@
   <section class="section" id="servicesSec">
     <h2>What I Offer!</h2>
     <div id="cardContainer">
-      <div class="servicesCards wow animate__animated animate__fadeInLeft" id="webpageServ"><i class="fas fa-tv"></i>
+      <div class="servicesCards animate wow animate__animated animate__fadeInLeft" id="webpageServ"><i
+          class="fas fa-tv"></i>
         <div class="servicesInfo">
           <h3>Webpages</h3>
           <p>I design stunning and elegant webpages</p>
         </div>
       </div>
-      <div class="servicesCards wow animate__animated animate__fadeInUp" id="websiteServ"><i
+      <div class="servicesCards animate wow animate__animated animate__fadeInUp" id="websiteServ"><i
           class="fas fa-shopping-bag"></i>
         <div class="servicesInfo">
           <h3>Websites</h3>
           <p>I design fully responsive stunning and elegant websites</p>
         </div>
       </div>
-      <div class="servicesCards wow animate__animated animate__fadeInRight" id="logoServ"><i class="fas fa-adjust"></i>
+      <div class="servicesCards animate wow animate__animated animate__fadeInRight" id="logoServ"><i
+          class="fas fa-adjust"></i>
         <div class="servicesInfo">
           <h3>Logo Design</h3>
-          <p>I my free time, I also design Logo</p>
+          <p>In my free time, I also design Logo</p>
         </div>
       </div>
     </div>
@@ -113,8 +119,8 @@
   </section>
 
   <section class="section" id="contactSec">
-    <form id="contactForm" target="post" action="./assets/success.html" data-netlify=" true"
-      class="wow animate__animated animate__fadeInTopLeft">
+    <form id="contactForm" target="post" action="./assets/html/success.html" data-netlify=" true"
+      class="animate wow animate__animated animate__fadeInTopLeft">
       <h2>Contact Me</h2>
       <div class="form-control">
         <label for="name">Your Full Name</label>
@@ -132,7 +138,7 @@
       <div class="form-control"><button type="submit">Submit</button></div>
     </form>
 
-    <div id="socialHandles" class="wow animate__animated animate__fadeInTopRight">
+    <div id="socialHandles" class="animate wow animate__animated animate__fadeInTopRight">
       <h2>Connect with me</h2>
       <div id="socialIcons">
         <div> <a href="https://www.instagram.com/pvcodes/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -163,8 +169,47 @@
     <p>Made with <i class="fas fa-heart"></i> by Pranjal Verma</p>
   </footer>
 
-  <script src="./assets/js/index.js"></script>
+  <!-- ===================================================================== -->
+  <!-- ===================================================================== -->
+  <!---------------------------------PRELOADER--------------------------------->
+  <div id="preloader">
+    <div id="ctn-preloader" class="ctn-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text-preloader="P" class="letters-loading">
+            P
+          </span>
+          <span data-text-preloader="V" class="letters-loading">
+            V
+          </span>
+          <span data-text-preloader="C" class="letters-loading">
+            C
+          </span>
+          <span data-text-preloader="O" class="letters-loading">
+            O
+          </span>
+          <span data-text-preloader="D" class="letters-loading">
+            D
+          </span>
+          <span data-text-preloader="E" class="letters-loading">
+            E
+          </span>
+          <span data-text-preloader="S" class="letters-loading">
+            S
+          </span>
 
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+  <!-- ===================================================================== -->
+  <!-- ===================================================================== -->
+
+
+  <script src="./assets/js/index.js"></script>
   <!-- 
     This site is made by Pranjal Verma email(pranjalverma0606@gmail.com)
     from date 08-05-2020 to 13-05-2020 
