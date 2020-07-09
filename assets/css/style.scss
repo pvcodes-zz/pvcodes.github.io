@@ -61,6 +61,7 @@ header {
     color: $redColor;
     font-weight: 600;
     font-family: "Megrim", cursive;
+    transform: translateY(-3px);
   }
 }
 
@@ -252,7 +253,7 @@ header {
   position: relative;
 
   #contactForm {
-    width: 25rem;
+    width: 30rem;
     margin: 0 auto;
     background: #212121;
     color: #eeeeee;
@@ -449,6 +450,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+
   //services Sec
   #cardContainer {
     display: flex;
@@ -497,7 +499,8 @@ footer {
   animation: spinner 1s infinite linear;
   border-radius: 50%;
   border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: #000000; /* No se identa por orden alfabetico para que no lo sobre-escriba */
+  border-top-color: #000000;
+  /* No se identa por orden alfabetico para que no lo sobre-escriba */
   height: 9em;
   margin: 0 auto 3.5em auto;
   width: 9em;
@@ -526,45 +529,27 @@ footer {
   position: relative;
 }
 
-.ctn-preloader
-  .animation-preloader
-  .txt-loading
-  .letters-loading:nth-child(2):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
   animation-delay: 0.2s;
 }
 
-.ctn-preloader
-  .animation-preloader
-  .txt-loading
-  .letters-loading:nth-child(3):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
   animation-delay: 0.4s;
 }
 
-.ctn-preloader
-  .animation-preloader
-  .txt-loading
-  .letters-loading:nth-child(4):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
   animation-delay: 0.6s;
 }
 
-.ctn-preloader
-  .animation-preloader
-  .txt-loading
-  .letters-loading:nth-child(5):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
   animation-delay: 0.8s;
 }
 
-.ctn-preloader
-  .animation-preloader
-  .txt-loading
-  .letters-loading:nth-child(6):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
   animation-delay: 1s;
 }
 
-.ctn-preloader
-  .animation-preloader
-  .txt-loading
-  .letters-loading:nth-child(7):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
   animation-delay: 1.2s;
 }
 
@@ -600,6 +585,7 @@ footer {
   transform: translateX(101%);
   transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
 }
+
 /* Animation of the preloader */
 @keyframes spinner {
   to {
@@ -609,6 +595,7 @@ footer {
 
 /* Animation of the letters loading from the preloader */
 @keyframes letters-loading {
+
   0%,
   75%,
   100% {
@@ -625,6 +612,7 @@ footer {
 
 /* Backward laptop size (laptop, tablet, cell phone) */
 @media screen and (max-width: 767px) {
+
   /* Preloader */
   /* Spinner Loading */
   .ctn-preloader .animation-preloader .spinner {
@@ -639,6 +627,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
   /* Prelaoder */
   /* Spinner Loading */
   .ctn-preloader .animation-preloader .spinner {

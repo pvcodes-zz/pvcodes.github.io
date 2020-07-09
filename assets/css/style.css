@@ -63,6 +63,8 @@ header {
   color: #c62828;
   font-weight: 600;
   font-family: "Megrim", cursive;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 #menubar {
@@ -261,7 +263,7 @@ header {
 }
 
 #contactSec #contactForm {
-  width: 25rem;
+  width: 30rem;
   margin: 0 auto;
   background: #212121;
   color: #eeeeee;
@@ -560,50 +562,32 @@ footer p i {
   position: relative;
 }
 
-.ctn-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(2):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.ctn-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(3):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.ctn-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(4):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.ctn-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(5):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
 
-.ctn-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(6):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.ctn-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(7):before {
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }

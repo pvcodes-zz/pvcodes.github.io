@@ -84,7 +84,8 @@ function centerTextTransition() {
   new Typewriter("#centerText", {
     strings: [
       "Hello, I'm Pranjal Verma.",
-      "A Frontend Developer.",
+      "A C++ Programmer. ",
+      "& A Web Devloper Too!",
       "From India",
     ],
     autoStart: true,
