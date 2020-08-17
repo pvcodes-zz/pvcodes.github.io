@@ -263,7 +263,7 @@ header {
 }
 
 #contactSec #contactForm {
-  width: 30rem;
+  width: 25rem;
   margin: 0 auto;
   background: #212121;
   color: #eeeeee;
@@ -331,6 +331,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-items: center;
+  
 }
 
 #socialHandles #socialIcons div p {
