@@ -62,7 +62,7 @@ header {
   margin-left: 0.5rem;
   color: #c62828;
   font-weight: 600;
-  font-family: "Megrim", cursive;
+  font-family: "Anonymous Pro", cursive;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -332,7 +332,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  
 }
 
 #socialHandles #socialIcons div p {
