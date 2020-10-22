@@ -1,6 +1,9 @@
+// Note: Firstly I have coded styling for mobile devices then added responsivness for bigger devices
+
 // Importing fonts from google fonts
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Megrim&family=Overpass&display=swap");
 
+// ------------------------------------------------------------------
 // CSS RESET
 *,
 *::before,
@@ -22,17 +25,39 @@ a {
   color: black;
 }
 
-// Class for JS
+// Classes for JS
 .active {
-  background: $redColor;
+  background: #e57373;
   color: yellow;
-
 }
 
+.menuActive {
+  color: #ffffff;
+  transform: scale(1) translateX(0px);
+}
+.menuNon {
+  color: #232323;
+  background: #fff;
+  border-radius: 1px;
+  transform: scale(1.5) translateX(-5px);
+}
+.whiteBody {
+  color: #223322;
+  background-color: #f5f5f5;
+}
+
+.whiteColor {
+  color: #fff;
+}
+
+// --------------------------------------------------------------------------------
+// Styling Start Here
+// --------------------------------------------------------------------------------
 body {
   background: #232323;
   color: white;
   font-family: "Overpass", sans-serif;
+  transition: all 0.3s linear;
 }
 
 // Styling header
@@ -44,84 +69,110 @@ header {
   padding: 0.5rem;
   position: relative;
   z-index: 999;
-  transition: background 0.6s linear;
-}
 
-#logo {
-  display: flex;
-  align-items: center;
+  #logo {
+    display: flex;
+    align-items: center;
 
-  img {
-    width: 60px;
-    border-radius: 50%;
+    img {
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    h2 {
+      margin-left: 0.5rem;
+      color: $redColor;
+      font-weight: 600;
+      transform: translateY(-3px);
+      display: block;
+      text-align: center;
+    }
   }
 
-  h2 {
-    margin-left: 0.5rem;
-    color: $redColor;
-    font-weight: 600;
-    font-family: "Anonymous Pro", cursive;
-    transform: translateY(-3px);
+  #menubar {
+    position: relative;
+    cursor: pointer;
+
+    span {
+      font-size: 0.5rem;
+      position: absolute;
+      right: 9px;
+      bottom: 16px;
+      z-index: 998;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: all 0.3s linear;
+    }
+
+    .far {
+      font-size: 2.5rem;
+      border-radius: 50%;
+      transition: all 0.3s linear;
+      z-index: 999;
+    }
   }
-}
 
-#menubar {
-  position: relative;
-  cursor: pointer;
+  #darkmode {
+    position: relative;
+    div {
+      margin-right: 0.5rem;
+      background: linear-gradient(135deg, hsl(146, 68%, 55%) 35%, hsl(210, 78%, 56%) 100%);
+      height: 1.3rem;
+      width: 2.5rem;
+      border-radius: 10px;
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+      display: flex;
+      align-items: center;
+      p {
+        // padding: .5rem;
+        color: #232323;
+        background-color: #232323;
+        border-radius: 50%;
+        width: 15px;
+        transform: translateX(23px);
+        height: 15px;
+        transition: all 0.3s linear;
+      }
+    }
+  }
 
-  span {
-    font-size: 0.5rem;
+  #navbar {
+    display: none;
+    width: 100%;
+    background: #222222;
     position: absolute;
-    right: 9px;
-    bottom: 14.5px;
-    z-index: 998;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.3s linear;
-  }
+    left: 0;
+    top: 0;
+    text-align: center;
 
-  .far {
-    font-size: 2.5rem;
-    border-radius: 50%;
-    transition: all 0.3s linear;
-    z-index: 999;
-  }
-}
+    li {
+      padding: 0.5rem 0;
+      text-transform: uppercase;
+      transition: text-decoration 0.3s linear;
 
-#navbar {
-  display: none;
-  width: 100%;
-  background: #222222;
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
+      &:hover {
+        transform: scale(1.1);
+      }
 
-  li {
-    padding: 0.5rem 0;
-    text-transform: uppercase;
-    transition: text-decoration 0.6s linear;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    .navItems {
-      color: white;
-      transition: background 0.3s linear;
+      .navItems {
+        color: white;
+        transition: background 0.3s linear;
+      }
     }
   }
 }
-
+// ------------------------------------------------------------------
 //General Styling of section
+// ------------------------------------------------------------------
 .section {
   padding-left: 5px;
   font-family: "Manrope", sans-serif;
-
   h2 {
     font-weight: 700;
     color: $redColor;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 0.5rem 0;
     font-size: 2rem;
     letter-spacing: 0.8px;
   }
@@ -132,7 +183,9 @@ header {
   }
 }
 
+// ------------------------------------------------------------------
 // Styling section #HomeSec
+// ------------------------------------------------------------------
 #homeSec {
   height: 88.61vh;
   display: flex;
@@ -166,11 +219,13 @@ header {
     background-position: bottom;
     background-attachment: fixed;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.85;
   }
 }
 
+// ------------------------------------------------------------------
 // Styling section about
+// ------------------------------------------------------------------
 #aboutSec {
   #myEdu {
     h3 {
@@ -205,7 +260,9 @@ header {
   }
 }
 
+// ------------------------------------------------------------------
 // Styling section services
+// ------------------------------------------------------------------
 #servicesSec {
   .servicesCards {
     margin: 2rem;
@@ -249,55 +306,81 @@ header {
   }
 }
 
-#contactSec {
+// ------------------------------------------------------------------
+// Portfolio/Project Sec
+// ------------------------------------------------------------------
+#projectSec {
   position: relative;
-
-  #contactForm {
-    width: 25rem;
-    margin: 0 auto;
-    background: #212121;
-    color: #eeeeee;
-    padding: 0.5rem;
-
-    .form-control {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 1.5rem;
-
-      label {
-        margin-bottom: 0.25rem;
-        font-weight: bold;
-      }
-
-      input,
-      #msg {
-        border: none;
-        border: 1px solid #9e9e9e;
-        background: none;
-        padding: 0.5rem;
-        outline: none;
-        color: #eeeeee;
-      }
-
-      button {
-        background: #689f38;
-        border: none;
-        border-radius: 5px;
-        width: 15rem;
-        height: 3rem;
-        margin: 0 auto;
-        font-weight: bold;
-        font-size: 2rem;
-        transition: transform 0.3s linear;
-
-        &:hover {
+  #projectWrapper {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .projectThumbnail {
+      position: relative;
+      &:hover {
+        .caption {
+          height: 50%;
+          transition: 0.4s;
+        }
+        img {
+          opacity: 0.5;
           cursor: pointer;
+        }
+      }
+      img {
+        margin: 0.75rem;
+        width: 25rem;
+        transition: all 1s ease-in-out;
+      }
+      .caption {
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        right: 5%;
+        background-color: rgba(#232323, 0.8);
+        color: #fff;
+        padding: 20px;
+        height: 66px;
+        overflow: hidden;
+        transition: 0.4s;
+        h3 {
+          margin: 0 0 15px;
+          font-weight: bold;
+        }
+        p {
+          line-height: 1.5;
+          color: #dad9d9;
         }
       }
     }
   }
+  #project-view-more {
+    padding: 0.2rem;
+    position: absolute;
+    right: 7rem;
+    bottom: -1.25rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(to left, transparent 50%, #f44336 50%) right;
+    background-size: 200%;
+    a {
+      color: #fff;
+      font-family: manlo;
+    }
+    &:hover {
+      background-position: left;
+      a {
+        color: #efebe9;
+      }
+    }
+  }
 }
-
+// ----------------------------------------------------------------------------
+// Contact Sec
+// ----------------------------------------------------------------------------
 #socialHandles {
   i {
     padding: 1rem;
@@ -311,15 +394,11 @@ header {
 
   #socialIcons {
     div {
-      p {
-        display: none;
-      }
+      width: 25rem;
+      margin: 0 auto;
+      display: flex;
+      justify-items: center;
     }
-
-    width: 25rem;
-    margin: 0 auto;
-    display: flex;
-    justify-items: center;
   }
 }
 
@@ -340,7 +419,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.45;
+    opacity: 0.85;
     z-index: -1;
   }
 
@@ -351,8 +430,9 @@ footer {
   }
 }
 
+// ------------------------------------------
 // Responsiveness
-
+// ------------------------------------------
 @media only screen and (min-width: 1024px) {
   header {
     height: 4rem;
@@ -364,7 +444,9 @@ footer {
     #logo {
       display: flex;
       align-items: center;
-
+      h2 {
+        display: none;
+      }
       img {
         width: 60px;
         border-radius: 50%;
@@ -379,7 +461,7 @@ footer {
       width: auto;
       display: flex;
       position: initial;
-
+      margin-right: 3rem;
       li {
         padding: 0.5rem;
 
@@ -394,6 +476,10 @@ footer {
           border-radius: 1rem;
         }
       }
+      div {
+        bottom: 4px;
+        left: 1px;
+      }
     }
   }
 
@@ -405,23 +491,20 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
-
-    #contactForm {
-      margin: 0;
-    }
-
     #socialHandles {
       padding: 1rem;
-      background: #212121;
-
+      h2 {
+        text-align: center;
+      }
       #socialIcons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         overflow: hidden;
 
         div {
           display: flex;
           align-items: center;
+          justify-content: center;
 
           &:hover p {
             transform: translateX(2px);
@@ -436,22 +519,15 @@ footer {
             transform: translateX(-216px);
             transition: transform 0.6s linear;
           }
-
-          i {
-            transition: transform 0.6s linear;
-
-            &:hover {
-              transform: rotate(360deg);
-            }
-          }
         }
       }
     }
   }
 }
 
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 @media screen and (min-width: 768px) {
-
   //services Sec
   #cardContainer {
     display: flex;
@@ -463,6 +539,11 @@ footer {
   }
 }
 
+@media screen and (max-width: 425px) {
+  #projectSec #project-view-more {
+    right: 0;
+  }
+}
 @media screen and (max-width: 375px) {
   html {
     width: 133%;
@@ -472,7 +553,7 @@ footer {
 // ===============================================================
 // ===============================================================
 // ===============================================================
-// Preloader Styling
+// Preloader Styling, used from a codepen.io, Sorry I losted his/her link :(
 // ===============================================================
 // ===============================================================
 // ===============================================================
@@ -596,7 +677,6 @@ footer {
 
 /* Animation of the letters loading from the preloader */
 @keyframes letters-loading {
-
   0%,
   75%,
   100% {
@@ -613,7 +693,6 @@ footer {
 
 /* Backward laptop size (laptop, tablet, cell phone) */
 @media screen and (max-width: 767px) {
-
   /* Preloader */
   /* Spinner Loading */
   .ctn-preloader .animation-preloader .spinner {
@@ -628,7 +707,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-
   /* Prelaoder */
   /* Spinner Loading */
   .ctn-preloader .animation-preloader .spinner {
@@ -640,10 +718,4 @@ footer {
   .ctn-preloader .animation-preloader .txt-loading {
     font: bold 2em "Montserrat", sans-serif;
   }
-}
-
-#qwerty {
-  background-color: #232323;
-  color: wheat;
-  font-size: 6rem;
 }

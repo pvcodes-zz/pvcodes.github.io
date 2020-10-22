@@ -10,9 +10,9 @@ var section = $("section");
 // ==========================
 // Preloader Setting
 // ==========================
-$(window).on("load", function () {
+setTimeout(() => {
   $("#preloader").fadeOut("slow");
-});
+}, 5000);
 
 // ==========================
 // Responsiveness to #menubar
@@ -52,12 +52,8 @@ mql.addListener(mqlFunc); // Attach listener function on state changes
 
 function navbarShowHide() {
   $("#menubar").click(function () {
-    $("#menubar span").css({
-      color: "black",
-      background: "white",
-      "border-radius": "1px",
-      transform: "scale(1.5) translateX(-5px)",
-    });
+    $("#menubar span").removeClass("menuActive");
+    $("#menubar span").addClass("menuNon");
     $("#menubar img").css("background", "#fff");
 
     // Toggle slideUp and down according to need
@@ -66,13 +62,10 @@ function navbarShowHide() {
       $("#navbar").slideDown("slow");
       toggle = !toggle;
     } else {
+      $("#menubar span").removeClass("menuNon");
       $("#menubar span").text("menu");
       $("#navbar").slideUp("slow");
-      $("#menubar span").css({
-        color: "#ffffff",
-        background: "none",
-        transform: "scale(1) translateX(0px)",
-      });
+      $("#menubar span").addClass("menuActive");
       $("#menubar img").css("background", "none");
       toggle = !toggle;
     }
@@ -82,24 +75,7 @@ function navbarShowHide() {
 // ==========================
 function centerTextTransition() {
   new Typewriter("#centerText", {
-    strings: [
-      "Hello, I'm Pranjal Verma.",
-      "A C++ Programmer. ",
-      "& A Web Devloper Too!",
-      "From India",
-    ],
-    autoStart: true,
-    loop: true,
-  });
-
-  new Typewriter("#blogSoon", {
-    strings: ["Comming Soon.", "Stay tuned. ;)"],
-    autoStart: true,
-    loop: true,
-  });
-
-  new Typewriter("#projectSoon", {
-    strings: ["Uploading Soon.", "Stay tuned. ;)"],
+    strings: ["Hello, I'm Pranjal Verma.", "A C++ Programmer. ", "& A Web Devloper Too!", "From India"],
     autoStart: true,
     loop: true,
   });
@@ -148,10 +124,7 @@ function scrollJugaad() {
 
     section.each(function () {
       var self = $(this);
-      if (
-        self.offset().top < currentScrollPos + header &&
-        currentScrollPos + header < self.offset().top + self.outerHeight()
-      ) {
+      if (self.offset().top < currentScrollPos + header && currentScrollPos + header < self.offset().top + self.outerHeight()) {
         var targetClass = self.attr("id");
         targetClass = "#" + targetClass.substring(0, targetClass.length - 3);
         targetClass = targetClass + " a";
@@ -161,3 +134,44 @@ function scrollJugaad() {
     });
   });
 }
+// -----------------------------------------------------
+var isDarkMode = true;
+$("#toggleKey").on("click", () => {
+  if (isDarkMode) {
+    $("#toggleCircle").css({
+      transform: "translateX(2px)",
+    });
+    $("#toggleKey").css({
+      background: "linear-gradient(to right, #ffeeee, #ddefbb)",
+      // "linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)",
+    });
+
+    // Light Mode Styling
+    $("body").addClass("whiteBody");
+    $("body").css({ background: "hsl(0, 0%, 100%)" });
+    $("header").css({ background: "#eee" });
+    $("#navbar").css({ background: "#eee" });
+    $("#centerText").css({ color: "#232323" });
+    $(".navItems").css({ color: "#232323" });
+    $(".fab").css({ color: "#232323" });
+    $(".far").css({ color: "#232323" });
+    $("#menubar span").css("color", "#232323");
+    $("footer").addClass("whiteColor");
+    $("#project-view-more a").css("color", "#232323");
+    isDarkMode = !isDarkMode;
+  } else {
+    $("#toggleCircle").css({ transform: "translateX(23px)" });
+    $("#toggleKey").css("background", "linear-gradient(135deg,hsl(146, 68%, 55%) 35%,  hsl(210, 78%, 56%) 100%)");
+    // NormalSetting
+    $("body").removeClass("whiteBody");
+    $("header").css({ background: "#232323" });
+    $("body").css({ background: "#232323" });
+    $("#navbar").css({ background: "#232323" });
+    $("#centerText").css({ color: "#fff" });
+    $(".fab").css({ color: "#fff" });
+    $(".far").css({ color: "#fff" });
+    $(".navItems").css({ color: "#fff" });
+    $("#project-view-more a").css("color", "#fff");
+    isDarkMode = !isDarkMode;
+  }
+});

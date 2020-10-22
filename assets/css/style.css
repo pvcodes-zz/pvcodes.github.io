@@ -16,14 +16,39 @@ a {
 }
 
 .active {
-  background: #c62828;
+  background: #e57373;
   color: yellow;
+}
+
+.menuActive {
+  color: #ffffff;
+  -webkit-transform: scale(1) translateX(0px);
+          transform: scale(1) translateX(0px);
+}
+
+.menuNon {
+  color: #232323;
+  background: #fff;
+  border-radius: 1px;
+  -webkit-transform: scale(1.5) translateX(-5px);
+          transform: scale(1.5) translateX(-5px);
+}
+
+.whiteBody {
+  color: #223322;
+  background-color: #f5f5f5;
+}
+
+.whiteColor {
+  color: #fff;
 }
 
 body {
   background: #232323;
   color: white;
   font-family: "Overpass", sans-serif;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 header {
@@ -40,11 +65,9 @@ header {
   padding: 0.5rem;
   position: relative;
   z-index: 999;
-  -webkit-transition: background 0.6s linear;
-  transition: background 0.6s linear;
 }
 
-#logo {
+header #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,30 +76,31 @@ header {
           align-items: center;
 }
 
-#logo img {
+header #logo img {
   width: 60px;
   border-radius: 50%;
 }
 
-#logo h2 {
+header #logo h2 {
   margin-left: 0.5rem;
   color: #c62828;
   font-weight: 600;
-  font-family: "Anonymous Pro", cursive;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+  display: block;
+  text-align: center;
 }
 
-#menubar {
+header #menubar {
   position: relative;
   cursor: pointer;
 }
 
-#menubar span {
+header #menubar span {
   font-size: 0.5rem;
   position: absolute;
   right: 9px;
-  bottom: 14.5px;
+  bottom: 16px;
   z-index: 998;
   text-transform: uppercase;
   font-weight: bold;
@@ -84,7 +108,7 @@ header {
   transition: all 0.3s linear;
 }
 
-#menubar .far {
+header #menubar .far {
   font-size: 2.5rem;
   border-radius: 50%;
   -webkit-transition: all 0.3s linear;
@@ -92,7 +116,40 @@ header {
   z-index: 999;
 }
 
-#navbar {
+header #darkmode {
+  position: relative;
+}
+
+header #darkmode div {
+  margin-right: 0.5rem;
+  background: linear-gradient(135deg, #3eda82 35%, #378fe6 100%);
+  height: 1.3rem;
+  width: 2.5rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #darkmode div p {
+  color: #232323;
+  background-color: #232323;
+  border-radius: 50%;
+  width: 15px;
+  -webkit-transform: translateX(23px);
+          transform: translateX(23px);
+  height: 15px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+header #navbar {
   display: none;
   width: 100%;
   background: #222222;
@@ -102,21 +159,21 @@ header {
   text-align: center;
 }
 
-#navbar li {
+header #navbar li {
   padding: 0.5rem 0;
   text-transform: uppercase;
-  -webkit-transition: -webkit-text-decoration 0.6s linear;
-  transition: -webkit-text-decoration 0.6s linear;
-  transition: text-decoration 0.6s linear;
-  transition: text-decoration 0.6s linear, -webkit-text-decoration 0.6s linear;
+  -webkit-transition: -webkit-text-decoration 0.3s linear;
+  transition: -webkit-text-decoration 0.3s linear;
+  transition: text-decoration 0.3s linear;
+  transition: text-decoration 0.3s linear, -webkit-text-decoration 0.3s linear;
 }
 
-#navbar li:hover {
+header #navbar li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-#navbar li .navItems {
+header #navbar li .navItems {
   color: white;
   -webkit-transition: background 0.3s linear;
   transition: background 0.3s linear;
@@ -130,7 +187,7 @@ header {
 .section h2 {
   font-weight: 700;
   color: #c62828;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 0.5rem 0;
   font-size: 2rem;
   letter-spacing: 0.8px;
 }
@@ -183,7 +240,7 @@ header {
   background-position: bottom;
   background-attachment: fixed;
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.85;
 }
 
 #aboutSec #myEdu h3 {
@@ -258,61 +315,95 @@ header {
   transition: all 0.2s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
 }
 
-#contactSec {
+#projectSec {
   position: relative;
 }
 
-#contactSec #contactForm {
-  width: 25rem;
-  margin: 0 auto;
-  background: #212121;
-  color: #eeeeee;
-  padding: 0.5rem;
-}
-
-#contactSec #contactForm .form-control {
+#projectSec #projectWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#contactSec #contactForm .form-control label {
-  margin-bottom: 0.25rem;
-  font-weight: bold;
+#projectSec #projectWrapper .projectThumbnail {
+  position: relative;
 }
 
-#contactSec #contactForm .form-control input,
-#contactSec #contactForm .form-control #msg {
-  border: none;
-  border: 1px solid #9e9e9e;
-  background: none;
-  padding: 0.5rem;
-  outline: none;
-  color: #eeeeee;
+#projectSec #projectWrapper .projectThumbnail:hover .caption {
+  height: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-#contactSec #contactForm .form-control button {
-  background: #689f38;
-  border: none;
-  border-radius: 5px;
-  width: 15rem;
-  height: 3rem;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 2rem;
-  -webkit-transition: -webkit-transform 0.3s linear;
-  transition: -webkit-transform 0.3s linear;
-  transition: transform 0.3s linear;
-  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
-}
-
-#contactSec #contactForm .form-control button:hover {
+#projectSec #projectWrapper .projectThumbnail:hover img {
+  opacity: 0.5;
   cursor: pointer;
+}
+
+#projectSec #projectWrapper .projectThumbnail img {
+  margin: 0.75rem;
+  width: 25rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#projectSec #projectWrapper .projectThumbnail .caption {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  right: 5%;
+  background-color: rgba(35, 35, 35, 0.8);
+  color: #fff;
+  padding: 20px;
+  height: 66px;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#projectSec #projectWrapper .projectThumbnail .caption h3 {
+  margin: 0 0 15px;
+  font-weight: bold;
+}
+
+#projectSec #projectWrapper .projectThumbnail .caption p {
+  line-height: 1.5;
+  color: #dad9d9;
+}
+
+#projectSec #project-view-more {
+  padding: 0.2rem;
+  position: absolute;
+  right: 7rem;
+  bottom: -1.25rem;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #f44336)) right;
+  background: linear-gradient(to left, transparent 50%, #f44336 50%) right;
+  background-size: 200%;
+}
+
+#projectSec #project-view-more a {
+  color: #fff;
+  font-family: manlo;
+}
+
+#projectSec #project-view-more:hover {
+  background-position: left;
+}
+
+#projectSec #project-view-more:hover a {
+  color: #efebe9;
 }
 
 #socialHandles i {
@@ -325,17 +416,13 @@ header {
   color: #c62828;
 }
 
-#socialHandles #socialIcons {
+#socialHandles #socialIcons div {
   width: 25rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
-}
-
-#socialHandles #socialIcons div p {
-  display: none;
 }
 
 footer {
@@ -356,7 +443,7 @@ footer::before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.45;
+  opacity: 0.85;
   z-index: -1;
 }
 
@@ -386,6 +473,9 @@ footer p i {
         -ms-flex-align: center;
             align-items: center;
   }
+  header #logo h2 {
+    display: none;
+  }
   header #logo img {
     width: 60px;
     border-radius: 50%;
@@ -399,6 +489,7 @@ footer p i {
     display: -ms-flexbox;
     display: flex;
     position: initial;
+    margin-right: 3rem;
   }
   header #navbar li {
     padding: 0.5rem;
@@ -413,6 +504,10 @@ footer p i {
     padding: 0.5rem;
     border-radius: 1rem;
   }
+  header #navbar div {
+    bottom: 4px;
+    left: 1px;
+  }
   #aboutPara p {
     padding-right: 2rem;
   }
@@ -425,21 +520,20 @@ footer p i {
             justify-content: space-evenly;
     padding: 1rem;
   }
-  #contactSec #contactForm {
-    margin: 0;
-  }
   #contactSec #socialHandles {
     padding: 1rem;
-    background: #212121;
+  }
+  #contactSec #socialHandles h2 {
+    text-align: center;
   }
   #contactSec #socialHandles #socialIcons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     overflow: hidden;
   }
   #contactSec #socialHandles #socialIcons div {
@@ -449,6 +543,9 @@ footer p i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #contactSec #socialHandles #socialIcons div:hover p {
     -webkit-transform: translateX(2px);
@@ -466,16 +563,6 @@ footer p i {
     transition: transform 0.6s linear;
     transition: transform 0.6s linear, -webkit-transform 0.6s linear;
   }
-  #contactSec #socialHandles #socialIcons div i {
-    -webkit-transition: -webkit-transform 0.6s linear;
-    transition: -webkit-transform 0.6s linear;
-    transition: transform 0.6s linear;
-    transition: transform 0.6s linear, -webkit-transform 0.6s linear;
-  }
-  #contactSec #socialHandles #socialIcons div i:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -488,6 +575,12 @@ footer p i {
   }
   #cardContainer .servicesCards {
     width: 20rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #projectSec #project-view-more {
+    right: 0;
   }
 }
 
@@ -702,11 +795,5 @@ footer p i {
   .ctn-preloader .animation-preloader .txt-loading {
     font: bold 2em "Montserrat", sans-serif;
   }
-}
-
-#qwerty {
-  background-color: #232323;
-  color: wheat;
-  font-size: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

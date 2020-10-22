@@ -1,218 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" title="Pranjal Verma" content="Hello, I'm Pranjal Verma " />
+    <title>Pranjal Verma | pvcodes</title>
+    <link rel="shortcut icon" href="./assets/img/me.png" style="border-radius: 50%" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pvcodes.dev</title>
-  <link rel="shortcut icon" href="./assets/img/logo.png" style="border-radius: 50%;" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- jQuery Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Type Writter Script -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./assets/js/lib/typescript.js"></script>
 
+    <!-- fontAwesome Script -->
+    <script src="https://kit.fontawesome.com/f3ba30e5d2.js" crossorigin="anonymous"></script>
+    <!-- Wow JS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Animate CSS Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  </head>
 
+  <body>
+    <header>
+      <div id="logo">
+        <a href="#"> <img src="./assets/img/logo.png" alt="" /></a>
+        <h2 id="header-h2">pvcodes</h2>
+      </div>
+      <div id="menubar"><span id="menu">Menu</span><i class="far fa-circle"></i></div>
+      <ul id="navbar">
+        <li id="home"><a class="active navItems" href="#homeSec">home</a></li>
+        <li id="about"><a class="navItems" href="#aboutSec">about</a></li>
+        <li id="services">
+          <a class="navItems" href="#servicesSec">Stuff I'do</a>
+        </li>
+        <li id="projects">
+          <a class="navItems" href="#projectSec">projects</a>
+        </li>
+        <li id="contact"><a class="navItems" href="#contactSec">contact</a></li>
+        <div id="darkmode">
+          <div id="toggleKey"><p id="toggleCircle"></p></div>
+        </div>
+      </ul>
+    </header>
 
-  <!-- jQuery Script -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <!-- Type Writter Script -->
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="./assets/js/lib/typescript.js"></script>
+    <section class="section" id="homeSec">
+      <img src="./assets/img/me.png" alt="Pranjal Verma" id="myImg" class="animate animate__animated animate__bounceInDown" />
+      <div class="animate animate__animated animate__bounceInUp" id="centerText"></div>
+    </section>
 
-  <!-- fontAwesome Script -->
-  <script src="https://kit.fontawesome.com/f3ba30e5d2.js" crossorigin="anonymous"></script>
-  <!-- Wow JS Script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <!-- Animate CSS Style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-  <!-- ScrollSpy Script -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/scrollspy@1.6.0/index.min.js"></script> -->
+    <section class="section" id="aboutSec">
+      <h2>A short info about me.</h2>
 
-</head>
+      <div id="aboutPara">
+        <p>
+          I'm a second year student completing my bachelors in computer applications from Integral Unviversity, Lucknow, India. I like to gain new
+          experiences, get in touch with peoples with new ideas to find diggerent point of views and watch and interpret the world. I look forward to
+          share and explore my values. Moreover, this is my very portfolio which comprises of the projects done in year 2019-2020.
+        </p>
 
-<body>
-  <header>
-    <div id="logo">
+        <p>
+          I create websites that supercharge your business with full verve; I love to deliver websites with unchallengeable performance. With
+          top-notch code, you'll be ready to kickstart your business. I love to create nice and beautiful websites. I stand on the sweet spot where
+          frontend and backend development blend.
+        </p>
+      </div>
+      <div id="myEdu">
+        <h3>Education</h3>
 
-      <a href="#"> <img src="./assets/img/logo.png" alt=""></a>
-      <h2>pvcodes</h2>
+        <p class="clg">Jagran Public School</p>
+        <p class="stnd">Senior Secondary Education (2015-2019)</p>
+        <p class="clg">Integral University</p>
+        <p class="stnd">Bachelors Of Computer Applications (2019-2022)</p>
+      </div>
+    </section>
+    <section class="section" id="servicesSec">
+      <h2>What I Do!</h2>
+      <div id="cardContainer">
+        <div class="servicesCards" id="webpageServ">
+          <i class="fas fa-tv"></i>
+          <div class="servicesInfo">
+            <h3>Programming</h3>
+            <p>I code In C++</p>
+          </div>
+        </div>
+        <div class="servicesCards" id="websiteServ">
+          <i class="fas fa-shopping-bag"></i>
+          <div class="servicesInfo">
+            <h3>Webpages</h3>
+            <p>Sometimes, I also design and code some HTML, CSS & JS to refresh the mind</p>
+          </div>
+        </div>
+        <div class="servicesCards" id="logoServ">
+          <i class="fas fa-adjust"></i>
+          <div class="servicesInfo">
+            <h3>And nothing Just Chillin</h3>
+            <p>Enjoying every moment of my life.....</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projectSec">
+      <h2>Projects</h2>
+      <div id="projectWrapper">
+        <div class="projectThumbnail">
+          <a href="https://pvcodes.github.io/socialmedia-dashboard" target="_blank">
+            <img src="./assets/img/projects-thumbnail/socialmedia-dashboard.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h3>Social Media Dashboard</h3>
+            <p>
+              A webpage for the analytics of the socialmedia handles
+              <a href="https://pvcodes.github.io/socialmedia-dashboard" target="_blank">Visit</a>
+            </p>
+          </div>
+        </div>
+        <div class="projectThumbnail">
+          <a href="">
+            <img src="./assets/img/projects-thumbnail/ping-launch-soon.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h3>Launch Soon Theme</h3>
+            <p>
+              A webpage for depicting the landing page a brand.
+              <a href="https://pvcodes.github.io" target="_blank">Visit</a>
+            </p>
+          </div>
+        </div>
+        <div class="projectThumbnail">
+          <a href="https://pvcodes.github.io" target="_blank">
+            <img src="./assets/img/projects-thumbnail/base-appeal.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h3>Base Apparel</h3>
+            <p>
+              A webpage for depicting the landing page a brand.
+              <a href="https://pvcodes.github.io" target="_blank">Visit</a>
+            </p>
+          </div>
+        </div>
+        <div class="projectThumbnail">
+          <a href="https://pvcodes.github.io" target="_blank">
+            <img src="./assets/img/projects-thumbnail/intro-component.jpg" alt="" />
+          </a>
+          <div class="caption">
+            <h3>SignUp/SignIn Theme</h3>
+            <p>A webpage for login and signup theme. <a href="https://pvcodes.github.io" target="_blank">Visit</a></p>
+          </div>
+        </div>
+      </div>
+      <p id="project-view-more">
+        <a href="./assets/page/projects.html">view more...</a>
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contactSec">
+      <div id="socialHandles">
+        <h2>Connect with me</h2>
+        <div id="socialIcons">
+          <div>
+            <div>
+              <a href="mailto:pvcodes@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+            <div>
+              <a href="https://github.com/pvcodes" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div>
+              <a href="https://dev.to/pvcodes" target="_blank"><i class="fab fa-dev"></i></a>
+            </div>
+            <div>
+              <a href="https://www.twitter.com/pvcodes/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/pvcodes/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>All right Reserved &copy;</p>
+      <p>Made with <i class="fas fa-heart"></i> by Pranjal Verma</p>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- ===================================================================== -->
+    <!---------------------------------PRELOADER--------------------------------->
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="P" class="letters-loading"> P </span>
+            <span data-text-preloader="V" class="letters-loading"> V </span>
+            <span data-text-preloader="C" class="letters-loading"> C </span>
+            <span data-text-preloader="O" class="letters-loading"> O </span>
+            <span data-text-preloader="D" class="letters-loading"> D </span>
+            <span data-text-preloader="E" class="letters-loading"> E </span>
+            <span data-text-preloader="S" class="letters-loading"> S </span>
+          </div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
     </div>
-    <div id="menubar">
-      <span>Menu</span><i class="far fa-circle"></i>
+    <!-- ===================================================================== -->
+    <!-- ===================================================================== -->
 
-    </div>
-    <ul id="navbar">
-      <li id="home"><a class=" active navItems " href="#homeSec">home</a> </li>
-      <li id="about"><a class="navItems" href="#aboutSec">about</a> </li>
-      <li id="services"><a class="navItems" href="#servicesSec">Stuff I'do</a> </li>
-      <li id="blog"><a class="navItems" href="#blogSec">blog</a> </li>
-      <li id="portfolio"><a class="navItems" href="#portfolioSec">portfolio</a> </li>
-      <li id="contact"><a class="navItems" href="#contactSec">contact</a> </li>
-    </ul>
-  </header>
-  <section class="section" id="homeSec">
-    <img src="./assets/img/me.jpg" alt="Pranjal Verma" id="myImg"
-      class="animate animate__animated animate__bounceInDown">
-    <div class="animate animate__animated animate__bounceInUp" id="centerText"></div>
-  </section>
-  <section class="section" id="aboutSec">
-    <h2>A short info about me.</h2>
-
-    <div id="aboutPara">
-      <p>I'm a second year student completing my bachelors in computer
-        applications from Integral Unviversity, Lucknow,
-        India. I like to gain new experiences, get in touch with peoples with new ideas to find diggerent point of views
-        and watch and interpret the world. I look forward to share and explore my values. Moreover, this is my very
-        portfolio which comprises of the projects done in year 2019-2020.</p>
-
-
-      <p> I create websites that supercharge your business with full verve; I love to deliver websites with
-        unchallengeable performance. With top-notch code, you'll be ready to kickstart your business. I love to create
-        nice and beautiful websites. I stand on the sweet spot where frontend and backend development blend.</p>
-    </div>
-    <div id="myEdu">
-      <h3>Education</h3>
-
-      <p class="clg">Jagran Public School </p>
-      <p class="stnd">Senior Secondary Education (2015-2019)</p>
-      <p class="clg">Integral University</p>
-      <p class="stnd">Bachelors Of Computer Applications (2019-2022)</p>
-    </div>
-
-  </section>
-  <section class="section" id="servicesSec">
-    <h2>What I Do!</h2>
-    <div id="cardContainer">
-      <div class="servicesCards" id="webpageServ"><i class="fas fa-tv"></i>
-        <div class="servicesInfo">
-          <h3>Programming</h3>
-          <p>I code In C++</p>
-        </div>
-      </div>
-      <div class="servicesCards" id="websiteServ"><i class="fas fa-shopping-bag"></i>
-        <div class="servicesInfo">
-          <h3>Webpages</h3>
-          <p>Sometimes, I also design and code some HTML, CSS & JS to refresh the mind</p>
-        </div>
-      </div>
-      <div class="servicesCards" id="logoServ"><i class="fas fa-adjust"></i>
-        <div class="servicesInfo">
-          <h3>And nothing Just Chillin</h3>
-          <p>Enjoying every moment of my life.....</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="blogSec">
-    <h2>Blog</h2>
-    <div class="commingsoon" id="blogSoon"></div>
-  </section>
-
-  <section class="section" id="portfolioSec">
-    <h2>Projects</h2>
-    <div class="commingsoon" id="projectSoon">
-      <!-- <h3>Web Development</h3>
-      <p>Some of my side project works are linked below</p>
-      <h3>C++ Development</h3>
-      <p>Some of my side project works are linked below</p>
-    </div> -->
-  </section>
-
-  <section class="section" id="contactSec">
-    <form id="contactForm" target="post" action="./assets/html/success.html" data-netlify=" true">
-      <h2>Contact Me</h2>
-      <div class="form-control">
-        <label for="name">Your Full Name</label>
-        <input name="FUll Name" type="text" id="name" required>
-      </div>
-      <div class="form-control">
-        <label for="name">Enter your Email</label>
-        <input name="Client's Email" type="email" id="email" required>
-
-      </div>
-      <div class="form-control">
-        <label for="msg">What can I do for you?</label>
-        <textarea name="Client's  msg" id="msg" cols="30" rows="10" required></textarea>
-      </div>
-      <div class="form-control"><button type="submit">Submit</button></div>
-    </form>
-
-    <div id="socialHandles">
-      <h2>Connect with me</h2>
-      <div id="socialIcons">
-        <div> <a href="https://www.instagram.com/pvcodes/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div> <a href="https://www.twitter.com/pvcodes/" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div> <a href="https://github.com/pvcodes" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <div> <a href="https://dev.to/pvcodes" target="_blank"><i class="fab fa-dev"></i></a>
-        </div>
-        <!-- <div> <a href="https://www.reddit.com/user/pvcodes/" target="_blank"><i class="fab fa-reddit"></i></a> -->
-        <!-- </div> -->
-        <!-- <div> <a href="https://www.behance.net/pvcodes" target="_blank"><i class="fab fa-behance"></i></a> -->
-        <!-- </div> -->
-        <div> <a href="mailto:pvcodes@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>All right Reserved &copy; </p>
-    <p>Made with <i class="fas fa-heart"></i> by Pranjal Verma</p>
-  </footer>
-
-  <!-- ===================================================================== -->
-  <!-- ===================================================================== -->
-  <!---------------------------------PRELOADER--------------------------------->
-  <div id="preloader">
-    <div id="ctn-preloader" class="ctn-preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text-preloader="P" class="letters-loading">
-            P
-          </span>
-          <span data-text-preloader="V" class="letters-loading">
-            V
-          </span>
-          <span data-text-preloader="C" class="letters-loading">
-            C
-          </span>
-          <span data-text-preloader="O" class="letters-loading">
-            O
-          </span>
-          <span data-text-preloader="D" class="letters-loading">
-            D
-          </span>
-          <span data-text-preloader="E" class="letters-loading">
-            E
-          </span>
-          <span data-text-preloader="S" class="letters-loading">
-            S
-          </span>
-
-        </div>
-      </div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
-  </div>
-  <!-- ===================================================================== -->
-  <!-- ===================================================================== -->
-
-
-  <script src="./assets/js/index.js"></script>
-  <!-- 
-    This site is made by Pranjal Verma email(pranjalverma0606@gmail.com)
-    from date 08-05-2020 to 13-05-2020 
-    It is my first portfolio website.
-  -->
-
-</body>
-
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
