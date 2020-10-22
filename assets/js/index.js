@@ -10,7 +10,7 @@ var section = $("section");
 // ==========================
 // Preloader Setting
 // ==========================
-$(window).on("load", () => {
+$(window).ready(() => {
   $("#preloader").fadeOut("slow");
 });
 
