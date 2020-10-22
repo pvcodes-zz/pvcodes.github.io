@@ -10,9 +10,9 @@ var section = $("section");
 // ==========================
 // Preloader Setting
 // ==========================
-setTimeout(() => {
+$(window).on("load", () => {
   $("#preloader").fadeOut("slow");
-}, 10000);
+});
 
 // ==========================
 // Responsiveness to #menubar
