@@ -12,7 +12,7 @@ var section = $("section");
 // ==========================
 setTimeout(() => {
   $("#preloader").fadeOut("slow");
-}, 5000);
+}, 10000);
 
 // ==========================
 // Responsiveness to #menubar
