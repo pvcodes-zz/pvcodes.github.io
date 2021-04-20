@@ -1,223 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hello, I'm Pranjal Verma " />
-    <title>Pranjal Verma | pvcodes</title>
-    <link rel="shortcut icon" href="./assets/img/me.png" style="border-radius: 50%" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- jQuery Script -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Type Writter Script -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="./assets/js/lib/typescript.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Pranjal Verma @pvcodes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/pvcodes" type="image/x-icon">
+</head>
 
-    <!-- fontAwesome Script -->
-    <script src="https://kit.fontawesome.com/f3ba30e5d2.js" crossorigin="anonymous"></script>
-    <!-- Wow JS Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <!-- Animate CSS Style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  </head>
-
-  <body>
-    <header>
-      <div id="logo">
-        <a href="#"> <img src="./assets/img/me.png" alt="" /></a>
-        <h2 id="header-h2">pvcodes</h2>
-      </div>
-      <div id="menubar"><span id="menu">Menu</span><i class="far fa-circle"></i></div>
-      <ul id="navbar">
-        <li id="home"><a class="active navItems" href="#homeSec">home</a></li>
-        <li id="about"><a class="navItems" href="#aboutSec">about</a></li>
-        <li id="services">
-          <a class="navItems" href="#servicesSec">Stuff I'do</a>
-        </li>
-        <li id="projects">
-          <a class="navItems" href="#projectSec">projects</a>
-        </li>
-        <li id="contact"><a class="navItems" href="#contactSec">contact</a></li>
-        <div id="darkmode">
-          <div id="toggleKey"><p id="toggleCircle"></p></div>
-        </div>
-      </ul>
-    </header>
-
-    <section class="section" id="homeSec">
-      <img src="./assets/img/me.png" alt="Pranjal Verma" id="myImg" class="animate animate__animated animate__bounceInDown" />
-      <div class="animate animate__animated animate__bounceInUp" id="centerText"></div>
-    </section>
-
-    <section class="section" id="aboutSec">
-      <h2>A short info about me.</h2>
-
-      <div id="aboutPara">
-        <p>
-          I'm a second year student completing my bachelors in computer applications from Integral Unviversity, Lucknow, India. I like to gain new
-          experiences, get in touch with peoples with new ideas to find diggerent point of views and watch and interpret the world. I look forward to
-          share and explore my values. Moreover, this is my very portfolio which comprises of the projects done in year 2019-2020.
-        </p>
-
-        <p>
-          I create websites that supercharge your business with full verve; I love to deliver websites with unchallengeable performance. With
-          top-notch code, you'll be ready to kickstart your business. I love to create nice and beautiful websites. I stand on the sweet spot where
-          frontend and backend development blend.
-        </p>
-      </div>
-      <div id="myEdu">
-        <h3>Education</h3>
-
-        <p class="clg">Jagran Public School</p>
-        <p class="stnd">Senior Secondary Education (2015-2019)</p>
-        <p class="clg">Integral University</p>
-        <p class="stnd">Bachelors Of Computer Applications (2019-2022)</p>
-      </div>
-    </section>
-    <section class="section" id="servicesSec">
-      <h2>What I Do!</h2>
-      <div id="cardContainer">
-        <div class="servicesCards" id="webpageServ">
-          <i class="fas fa-tv"></i>
-          <div class="servicesInfo">
-            <h3>Programming</h3>
-            <p>I code In C++</p>
-          </div>
-        </div>
-        <div class="servicesCards" id="websiteServ">
-          <i class="fas fa-shopping-bag"></i>
-          <div class="servicesInfo">
-            <h3>Webpages</h3>
-            <p>Sometimes, I also design and code some HTML, CSS & JS to refresh the mind</p>
-          </div>
-        </div>
-        <div class="servicesCards" id="logoServ">
-          <i class="fas fa-adjust"></i>
-          <div class="servicesInfo">
-            <h3>And nothing Just Chillin</h3>
-            <p>Enjoying every moment of my life.....</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projectSec">
-      <h2>Projects</h2>
-      <div id="projectWrapper">
-        <div class="projectThumbnail">
-          <a href="https://socialmedia-dashboard-pvcodes.netlify.app" target="_blank">
-            <img src="./assets/img/projects-thumbnail/socialmedia-dashboard.jpg" alt="" />
-          </a>
-          <div class="caption">
-            <h3>Social Media Dashboard</h3>
-            <p>
-              A webpage for the analytics of the socialmedia handles
-              <a href="https://socialmedia-dashboard-pvcodes.netlify.app/" target="_blank">Visit</a>
-            </p>
-          </div>
-        </div>
-        <div class="projectThumbnail">
-          <a href="https://launching-soon-pvcodes.netlify.app/" target="_blank">
-            <img src="./assets/img/projects-thumbnail/ping-launch-soon.jpg" alt="" />
-          </a>
-          <div class="caption">
-            <h3>Launch Soon Theme</h3>
-            <p>
-              A webpage for depicting the landing page a brand.
-              <a href="https://launching-soon-pvcodes.netlify.app/" target="_blank">Visit</a>
-            </p>
-          </div>
-        </div>
-        <div class="projectThumbnail">
-          <a href="https://base-apparel-pvcodes.netlify.app/" target="_blank">
-            <img src="./assets/img/projects-thumbnail/base-appeal.jpg" alt="" />
-          </a>
-          <div class="caption">
-            <h3>Base Apparel</h3>
-            <p>
-              A webpage for depicting the landing page a brand.
-              <a href="https://base-apparel-pvcodes.netlify.app/" target="_blank">Visit</a>
-            </p>
-          </div>
-        </div>
-        <div class="projectThumbnail">
-          <a href="https://signup-page-pvcodes.netlify.app/" target="_blank">
-            <img src="./assets/img/projects-thumbnail/intro-component.jpg" alt="" />
-          </a>
-          <div class="caption">
-            <h3>SignUp/SignIn Theme</h3>
-            <p>A webpage for login and signup theme. <a href="https://signup-page-pvcodes.netlify.app/" target="_blank">Visit</a></p>
-          </div>
-        </div>
-      </div>
-      <p id="project-view-more">
-        <a href="./assets/page/projects.html">view more...</a>
-      </p>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contactSec">
-      <div id="socialHandles">
-        <h2>Connect with me</h2>
-        <div id="socialIcons">
-          <div>
-            <div>
-              <a href="mailto:pvcodes@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-            </div>
-            <div>
-              <a href="https://github.com/pvcodes" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div>
-              <a href="https://dev.to/pvcodes" target="_blank"><i class="fab fa-dev"></i></a>
-            </div>
-            <div>
-              <a href="https://www.twitter.com/pvcodes/" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/pvcodes/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>All right Reserved &copy;</p>
-      <p>Made with <i class="fas fa-heart"></i> by Pranjal Verma</p>
-    </footer>
-
-    <!-- ===================================================================== -->
-    <!-- ===================================================================== -->
-    <!---------------------------------PRELOADER--------------------------------->
-    <div id="preloader">
-      <div id="ctn-preloader" class="ctn-preloader">
-        <div class="animation-preloader">
-          <div class="spinner"></div>
-          <div class="txt-loading">
-            <span data-text-preloader="P" class="letters-loading"> P </span>
-            <span data-text-preloader="V" class="letters-loading"> V </span>
-            <span data-text-preloader="C" class="letters-loading"> C </span>
-            <span data-text-preloader="O" class="letters-loading"> O </span>
-            <span data-text-preloader="D" class="letters-loading"> D </span>
-            <span data-text-preloader="E" class="letters-loading"> E </span>
-            <span data-text-preloader="S" class="letters-loading"> S </span>
-          </div>
-        </div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-      </div>
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="c-hero">
+    <button class="c-theme-btn" onclick="changeTheme()">
+      <svg class="c-theme-btn__inner" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M39.9731 21.047L35.9784 20.841C35.9927 20.5628 36 20.2824 36 20C36 19.7176 35.9927 19.4372 35.9784 19.159L39.9731 18.953C39.991 19.2998 40 19.6488 40 20C40 20.3512 39.991 20.7002 39.9731 21.047ZM37.8239 10.9182L34.2613 12.7371C34.0068 12.2385 33.7268 11.7549 33.4228 11.2878L36.7755 9.10608C37.1553 9.68978 37.5055 10.2945 37.8239 10.9182ZM30.8939 3.22453L28.7122 6.57719C28.2451 6.27323 27.7615 5.99317 27.2629 5.73865L29.0818 2.1761C29.7055 2.49452 30.3102 2.84471 30.8939 3.22453ZM21.047 0.0269329L20.841 4.02162C20.5628 4.00728 20.2824 4 20 4C19.7176 4 19.4372 4.00728 19.159 4.02162L18.953 0.026933C19.2998 0.00905119 19.6488 0 20 0C20.3512 0 20.7002 0.00905116 21.047 0.0269329ZM10.9182 2.1761L12.7371 5.73866C12.2385 5.99317 11.7549 6.27323 11.2878 6.5772L9.10608 3.22453C9.68978 2.84471 10.2945 2.49452 10.9182 2.1761ZM3.22453 9.10609L6.57719 11.2878C6.27323 11.7549 5.99317 12.2385 5.73865 12.7371L2.1761 10.9182C2.49452 10.2945 2.84471 9.68978 3.22453 9.10609ZM0.0269329 18.953C0.00905116 19.2998 0 19.6488 0 20C0 20.3512 0.00905119 20.7002 0.026933 21.047L4.02162 20.841C4.00728 20.5628 4 20.2824 4 20C4 19.7176 4.00728 19.4372 4.02162 19.159L0.0269329 18.953ZM2.1761 29.0818L5.73866 27.2629C5.99317 27.7615 6.27323 28.2451 6.5772 28.7122L3.22453 30.8939C2.84471 30.3102 2.49452 29.7055 2.1761 29.0818ZM9.10609 36.7755L11.2878 33.4228C11.7549 33.7268 12.2385 34.0068 12.7371 34.2613L10.9182 37.8239C10.2945 37.5055 9.68978 37.1553 9.10609 36.7755ZM18.953 39.9731L19.159 35.9784C19.4372 35.9927 19.7176 36 20 36C20.2824 36 20.5628 35.9927 20.841 35.9784L21.047 39.9731C20.7002 39.991 20.3512 40 20 40C19.6488 40 19.2998 39.991 18.953 39.9731ZM29.0818 37.8239L27.2629 34.2613C27.7615 34.0068 28.2451 33.7268 28.7122 33.4228L30.8939 36.7755C30.3102 37.1553 29.7055 37.5055 29.0818 37.8239ZM36.7755 30.8939L33.4228 28.7122C33.7268 28.2451 34.0068 27.7615 34.2613 27.2629L37.8239 29.0818C37.5055 29.7055 37.1553 30.3102 36.7755 30.8939Z"
+          fill="currentColor"></path>
+      </svg>
+    </button>
+    <div class="c-title"><a href="https://pvcodes.netlify.app" target="_blank">Pranjal Verma</a>&nbsp;is currently
+      designing things and solving problems at <a href="https://pvcodes.netlify.app/#about" target="_blank">Universe</a>.</div>
+    <div class="c-social">
+      <a class="c-social__link" href="mailto:pvcodes@gmail.com" target="_blank">Email</a>
+      <a class="c-social__link" href="https://codeforces.com/profile/pvcodes" target="_blank">Codeforces</a>
+      <a class="c-social__link" href="https://www.linkedin.com/in/pvcodes/" target="_blank">LinkedIn</a>
+      <a class="c-social__link" href="https://github.com/pvcodes" target="_blank">GitHub</a>
     </div>
-    <!-- ===================================================================== -->
-    <!-- ===================================================================== -->
+  </div>
+  <!-- partial -->
+  <script src="./script.js"></script>
 
-    <script src="./assets/js/index.js"></script>
-  </body>
+</body>
+
 </html>
