@@ -1,4 +1,4 @@
-<h3 align="center"><samp>Hello! I am <b><a rel="nofollow noopener noreferrer" target="_blank" href="https://pvcodes.netlify.app">Pranjal Verma</a></b></samp></h3>
+<h3 align="center"><samp>Hello! I am <b><a rel="nofollow noopener noreferrer" target="_blank" href="https://pvcodes.in">Pranjal Verma</a></b></samp></h3>
 <p align="center"><br>
   <samp>
     「 Bachelor of Computer Application Candidate @ <b>Integral University</b> 」<br>
@@ -24,7 +24,7 @@
       <!-- <a href="https://github.com/pvcodes?tab=repositories&language=html" target="_blank"><img alt="HTML" src="https://img.shields.io/badge/-HTML-e34c26?style=flat-square"></a> -->
   <br>
   <img src="https://github-readme-stats.vercel.app/api?username=pvcodes&show_icons=true&hide_border=true&hide=issues&title_color=5391FE&icon_color=000000&text_color=555"></img><br>
-    <!-- Check out my <a rel="nofollow noopener noreferrer" target="_blank" href="https://pvcodes.netlify.app/src/my_resume.pdf">Resume</a><br> -->
+    <!-- Check out my <a rel="nofollow noopener noreferrer" target="_blank" href="https://pvcodes.in/src/my_resume.pdf">Resume</a><br> -->
 
 [![Pranjal's github activity graph](https://activity-graph.herokuapp.com/graph?username=pvcodes&theme=xcode)](https://github.com/pvcodes)<br>
 
